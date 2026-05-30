@@ -1,0 +1,9 @@
+item_id,subsystem,part_family,estimate_quantity,source_status,authority,notes
+AM-BOM-001,tines,spring_metal_tine_stock,estimate_assortment,pending_selection,pending_measurement,"Material and stock dimensions pending supplier review and tine mule testing."
+AM-BOM-002,tines,tine_fasteners_or_pressure_bar,estimate_as_needed,pending_design,pending_measurement,"Clamp pressure and serviceability must be tested before design release."
+AM-BOM-003,bridge,bridge_bar_or_saddle,estimate_one_assembly,pending_design,pending_measurement,"Bridge hardness seating and damping behavior pending mule."
+AM-BOM-004,resonators,shared_or_modular_resonator_body,estimate_one_system,pending_decision,pending_measurement,"Resonator topology not selected; no volume or tuning data supplied."
+AM-BOM-005,body,array_frame_or_case,estimate_one,pending_design,pending_measurement,"Body shape support mode and hand clearance pending ergonomic mockup."
+AM-BOM-006,damping,felts_foams_or_gaskets,estimate_assortment,pending_selection,pending_measurement,"Damping material family only; placement and material pending buzz tests."
+AM-BOM-007,marking,note_labels_or_position_markers,estimate_as_needed,pending_design,concept_only,"Labeling concept for isomorphic navigation; final visual system pending layout decision."
+AM-BOM-008,setup,temporary_test_jig,estimate_one,pending_design,pending_measurement,"Prototype jig for removable tines and resonator swaps; not a finished instrument component."
