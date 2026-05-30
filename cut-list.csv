@@ -1,0 +1,7 @@
+item_id,subsystem,part_class,quantity_status,authority,dimension_status,notes
+AM-CL-001,validation,layout mockup panel,estimate_pending_measurement,pending_measurement,pending_measurement,"Non-sounding ergonomic surface only; no final spacing or case geometry."
+AM-CL-002,tines,removable tine mule blanks,estimate_pending_measurement,pending_measurement,pending_measurement,"No tine lengths widths thicknesses pitches or tuning targets are released."
+AM-CL-003,bridge,adjustable bridge or pressure-bar mule,estimate_pending_measurement,pending_measurement,pending_measurement,"Clamp and seating test class only; no fabrication geometry."
+AM-CL-004,resonators,interchangeable resonator test modules,estimate_pending_measurement,pending_measurement,pending_measurement,"No resonator volumes mouth sizes ports or coupling targets are specified."
+AM-CL-005,body,temporary support frame or fixture,estimate_pending_measurement,pending_measurement,pending_measurement,"Fixture class only for hand mode and service-access review."
+AM-CL-006,damping,damping material coupons,estimate_pending_measurement,pending_measurement,pending_measurement,"Material coupons only; placement and performance pending buzz tests."

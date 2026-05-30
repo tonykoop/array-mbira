@@ -1,9 +1,10 @@
 artifact_id,path,artifact_kind,role,authority,derived_from,dimension_claim,review_status,notes
-AM-README-001,README.md,packet_readme,readiness_boundary,concept_only,,none,self_checked,"Declares L1 concept status and blocks build-ready claims."
-AM-DESIGN-001,design.md,design_brief,mechanism_scaffold,concept_only,,none,self_checked,"Mechanism and parametric intent only; contains no dimensions tine lengths tuning table resonator volumes CAD geometry or DXF coordinates."
+AM-README-001,README.md,packet_readme,readiness_boundary,concept_only,,none,self_checked,"Declares L2 packet-candidate status and blocks build-ready claims."
+AM-DESIGN-001,design.md,design_brief,mechanism_scaffold,concept_only,,none,self_checked,"Mechanism gates and parametric intent only; contains no dimensions tine lengths tuning table resonator volumes CAD geometry or DXF coordinates."
 AM-BOM-001,bom.csv,bom_table,parts_family_estimate,pending_measurement,design.md,estimate_labels_only,self_checked,"Estimated part families only; all physical specifications remain pending."
+AM-CUTLIST-001,cut-list.csv,cut_list,planned_test_classes,pending_measurement,design.md,planned_missing_dimensions,self_checked,"Test fixture and fabrication classes only; all dimensions and tuning values remain pending measurement."
 AM-CAD-LOG-001,cad/mcp-session-log.md,provenance_log,mcp_log,concept_only,decision-record.md,none,self_checked,"Documents that no MCP CAD image or creative-tool session produced artifacts."
 AM-DECISION-001,decision-record.md,decision_record,open_questions,concept_only,docs/plans/2026-05-30-round7/codex-new-array-mbira.md,none,self_checked,"Records qmd Step 0 behavior layout decisions and measurement gates."
-AM-CAD-PLAN-001,cad/array-mbira.scad,cad_source_planned,future_parametric_cad,pending_measurement,design.md,planned_missing_artifact,unreviewed,"Future CAD source only; not present and not implied by this L1 packet."
+AM-CAD-PLAN-001,cad/array-mbira.scad,cad_source_planned,future_parametric_cad,pending_measurement,design.md,planned_missing_artifact,unreviewed,"Future CAD source only; not present and not implied by this L2 packet."
 AM-DXF-PLAN-001,drawings/tine-array-layout.dxf,dxf_export_planned,future_layout_template,pending_measurement,AM-CAD-PLAN-001,planned_missing_artifact,unreviewed,"Future DXF only after measured tine spacing bridge geometry and layout authority exist."
 AM-TABLE-PLAN-001,tables/tine-scale.csv,design_table_planned,future_tine_scale_table,pending_measurement,design.md,planned_missing_artifact,unreviewed,"Future measured or reviewed tine-scale table; no tuning or tine-length numbers are supplied."
