@@ -23,6 +23,27 @@ betaCantileverMode1Estimate = 1.875104068711961; (* estimate — pending measure
 gridColumnSemitoneStepEstimate = 2; (* estimate — pending measurement, not fabrication authority *)
 gridRowSemitoneStepEstimate = 5; (* estimate — pending measurement, not fabrication authority *)
 referenceRatioEstimate = 1.; (* estimate — pending measurement, not fabrication authority *)
+minimumTineLengthEstimate = 0.04; (* estimate — pending measurement, not fabrication authority *)
+maximumTineLengthEstimate = 0.16; (* estimate — pending measurement, not fabrication authority *)
+minimumTineWidthEstimate = 0.003; (* estimate — pending measurement, not fabrication authority *)
+maximumTineWidthEstimate = 0.015; (* estimate — pending measurement, not fabrication authority *)
+minimumTineThicknessEstimate = 0.0005; (* estimate — pending measurement, not fabrication authority *)
+maximumTineThicknessEstimate = 0.003; (* estimate — pending measurement, not fabrication authority *)
+minimumTineDensityEstimate = 6000.; (* estimate — pending measurement, not fabrication authority *)
+maximumTineDensityEstimate = 9000.; (* estimate — pending measurement, not fabrication authority *)
+minimumTineYoungsModulusEstimate = 100.0*^9; (* estimate — pending measurement, not fabrication authority *)
+maximumTineYoungsModulusEstimate = 230.0*^9; (* estimate — pending measurement, not fabrication authority *)
+minimumClampStiffnessFactorEstimate = 0.70; (* estimate — pending measurement, not fabrication authority *)
+maximumClampStiffnessFactorEstimate = 1.05; (* estimate — pending measurement, not fabrication authority *)
+minimumTipMassEstimate = 0.; (* estimate — pending measurement, not fabrication authority *)
+maximumTipMassEstimate = 0.0015; (* estimate — pending measurement, not fabrication authority *)
+minimumGridSemitoneStepEstimate = 1; (* estimate — pending measurement, not fabrication authority *)
+maximumGridSemitoneStepEstimate = 12; (* estimate — pending measurement, not fabrication authority *)
+gridSemitoneStepIncrementEstimate = 1; (* estimate — pending measurement, not fabrication authority *)
+minimumGridRowEstimate = -2; (* estimate — pending measurement, not fabrication authority *)
+maximumGridRowEstimate = 2; (* estimate — pending measurement, not fabrication authority *)
+minimumGridColumnEstimate = -2; (* estimate — pending measurement, not fabrication authority *)
+maximumGridColumnEstimate = 2; (* estimate — pending measurement, not fabrication authority *)
 
 tineArea[width_, thickness_] := width*thickness;
 tineSecondMoment[width_, thickness_] := width*thickness^3/12;
@@ -63,8 +84,9 @@ arrayMbiraNominalEstimate = <|
      tineYoungsModulusEstimate, clampStiffnessFactorEstimate,
      tipMassEstimate],
    "gridRelationshipEstimate" ->
-    arrayMbiraGridEstimate[-2, 2, -2, 2, gridRowSemitoneStepEstimate,
-     gridColumnSemitoneStepEstimate]
+    arrayMbiraGridEstimate[minimumGridRowEstimate, maximumGridRowEstimate,
+     minimumGridColumnEstimate, maximumGridColumnEstimate,
+     gridRowSemitoneStepEstimate, gridColumnSemitoneStepEstimate]
    |>;
 
 arrayMbiraExplorer =
@@ -75,33 +97,42 @@ arrayMbiraExplorer =
      <|"singleTineFrequencyHzEstimate" ->
        tineFrequencyHzEstimate[lengthMeters, widthMeters, thicknessMeters,
         densityKgPerM3, youngsModulusPa, clampFactor, tipMassKg]|>,
-     Plot[
+      Plot[
       tineFrequencyHzEstimate[length, widthMeters, thicknessMeters,
        densityKgPerM3, youngsModulusPa, clampFactor, tipMassKg],
-      {length, 0.04, 0.16},
+      {length, minimumTineLengthEstimate, maximumTineLengthEstimate},
       AxesLabel -> {"tine length estimate (m)",
         "frequency relationship estimate (Hz)"},
       PlotRange -> All],
-     arrayMbiraGridEstimate[-2, 2, -2, 2, rowStepSemitones,
-      columnStepSemitones]
+     arrayMbiraGridEstimate[minimumGridRowEstimate, maximumGridRowEstimate,
+      minimumGridColumnEstimate, maximumGridColumnEstimate,
+      rowStepSemitones, columnStepSemitones]
      }],
-   {{lengthMeters, tineLengthEstimate, "tine length estimate (m)"}, 0.04,
-    0.16},
-   {{widthMeters, tineWidthEstimate, "tine width estimate (m)"}, 0.003,
-    0.015},
+   {{lengthMeters, tineLengthEstimate, "tine length estimate (m)"},
+    minimumTineLengthEstimate, maximumTineLengthEstimate},
+   {{widthMeters, tineWidthEstimate, "tine width estimate (m)"},
+    minimumTineWidthEstimate, maximumTineWidthEstimate},
    {{thicknessMeters, tineThicknessEstimate,
-     "tine thickness estimate (m)"}, 0.0005, 0.003},
+     "tine thickness estimate (m)"}, minimumTineThicknessEstimate,
+    maximumTineThicknessEstimate},
    {{densityKgPerM3, tineDensityEstimate,
-     "tine density estimate (kg/m^3)"}, 6000., 9000.},
+     "tine density estimate (kg/m^3)"}, minimumTineDensityEstimate,
+    maximumTineDensityEstimate},
    {{youngsModulusPa, tineYoungsModulusEstimate,
-     "Young modulus estimate (Pa)"}, 100.0*^9, 230.0*^9},
+     "Young modulus estimate (Pa)"}, minimumTineYoungsModulusEstimate,
+    maximumTineYoungsModulusEstimate},
    {{clampFactor, clampStiffnessFactorEstimate,
-     "clamp stiffness factor estimate"}, 0.70, 1.05},
-   {{tipMassKg, tipMassEstimate, "tip mass estimate (kg)"}, 0., 0.0015},
+     "clamp stiffness factor estimate"}, minimumClampStiffnessFactorEstimate,
+    maximumClampStiffnessFactorEstimate},
+   {{tipMassKg, tipMassEstimate, "tip mass estimate (kg)"},
+    minimumTipMassEstimate, maximumTipMassEstimate},
    {{rowStepSemitones, gridRowSemitoneStepEstimate,
-     "row interval estimate (semitones)"}, 1, 12, 1},
+     "row interval estimate (semitones)"}, minimumGridSemitoneStepEstimate,
+    maximumGridSemitoneStepEstimate, gridSemitoneStepIncrementEstimate},
    {{columnStepSemitones, gridColumnSemitoneStepEstimate,
-     "column interval estimate (semitones)"}, 1, 12, 1},
+     "column interval estimate (semitones)"},
+    minimumGridSemitoneStepEstimate, maximumGridSemitoneStepEstimate,
+    gridSemitoneStepIncrementEstimate},
    SaveDefinitions -> True
    ];
 
@@ -109,4 +140,4 @@ arrayMbiraModel = <|
    "metadata" -> arrayMbiraMetadata,
    "nominalEstimate" -> arrayMbiraNominalEstimate,
    "explorer" -> arrayMbiraExplorer
-   |>;
+   |>
