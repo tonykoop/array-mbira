@@ -1,0 +1,16 @@
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.sldprt.bak-*
+*.SLDPRT.bak-*
+~$*
+.vs/
+.idea/
+.vscode/
+__pycache__/
+*.pyc
