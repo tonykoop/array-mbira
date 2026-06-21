@@ -1,0 +1,39 @@
+{
+  "packet_dir": ".",
+  "title": "Array Mbira — Starter Packet",
+  "instrument": "array mbira",
+  "build_target": "array mbira reference scaffold",
+  "artifact_focus": "idiophones instrument starter packet",
+  "generated": "2026-06-21",
+  "readiness": "starter",
+  "release_status": "private / starter scaffold",
+  "fabrication_authority": {
+    "current_status": "starter scaffold — not for fabrication",
+    "generated_images_allowed_as_authority": false,
+    "wolfram_allowed_as_authority": false
+  },
+  "engineering": {
+    "wolfram": [
+      {
+        "source_file": "idiophones/array-mbira/array-mbira-starter.wl",
+        "cloud_path": "Musical_Instruments/idiophones/array-mbira/array-mbira-starter.wl",
+        "cloud_url": "https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/idiophones/array-mbira/array-mbira-starter.wl",
+        "permission": "Public-Execute",
+        "kind": "acoustics-starter"
+      },
+      {
+        "source_file": "idiophones/array-mbira/wolfram/array-mbira-wolfram-model.wl",
+        "cloud_path": "Musical_Instruments/idiophones/array-mbira/array-mbira-wolfram-model.wl",
+        "cloud_url": "https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/idiophones/array-mbira/array-mbira-wolfram-model.wl",
+        "permission": "Public-Execute",
+        "kind": "geometry-model"
+      }
+    ]
+  },
+  "files_included": [
+    "README.md",
+    "design.md",
+    "bom.csv",
+    "cut-list.csv"
+  ]
+}
