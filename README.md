@@ -20,6 +20,10 @@ This packet is not build-ready. It contains no fabricated dimensions, tine lengt
   concept-only or pending measurement.
 - `cad/mcp-session-log.md` - provenance stub; no MCP or CAD session was run.
 - `decision-record.md` - qmd Step 0, decisions, open questions, and promotion gates.
+- `sourcing.csv`, `validation.csv`, `risks.md`, `drawing-brief.md` - V5 baseline
+  packet tables; all fields TBD/pending_measurement (no CAD/tine dimensions yet).
+- `evolution/` - evolution-pipeline Stage 0 intake of the current concept-level
+  design docs (no CAD master exists yet; Gate A not started).
 
 ## L2 Review Boundary
 

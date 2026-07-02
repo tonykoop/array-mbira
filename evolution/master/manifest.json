@@ -1,0 +1,35 @@
+{
+  "product": "array-mbira",
+  "pipeline": "studiopipeline:evolution-pipeline",
+  "stage": "0-intake",
+  "master_revision": "pre-commit intake, 2026-07-01",
+  "generated": "2026-07-01",
+  "cad_masters": [],
+  "reference_sources": [
+    {
+      "path": "design.md",
+      "format": "design-brief",
+      "sha256": "57a0d37a6425b175ada60e0c6b81f8ae65bb543358a0dad324eade9f20bd5cd0",
+      "authority": "concept_only",
+      "lossy": false,
+      "notes": "Mechanism/gate scaffold; deliberately contains no tine length, tuning, or resonator dimensions."
+    },
+    {
+      "path": "wolfram/array-mbira-wolfram-model.wl",
+      "format": "wolfram-source",
+      "sha256": "a182ea2db7d84d3dbb7c88584aedee59ed2abd77509bc7af92bc413abd5b7f6a",
+      "authority": "reference_only",
+      "lossy": false,
+      "notes": "Source-only, not executed; estimate placeholders pending measurement."
+    },
+    {
+      "path": "array-mbira-starter.wl",
+      "format": "wolfram-source",
+      "sha256": "06434a69b156b6dd07cce737e4a231c6b8743c6cb2922f56d51ff1acb2333928",
+      "authority": "reference_only",
+      "lossy": false,
+      "notes": "Thin Wolfram starter entrypoint."
+    }
+  ],
+  "notes": "No CAD master exists for this product. design.md explicitly withholds tine length/width/thickness, tuning, and resonator geometry until a measured tine mule exists (V5 honesty rule forbids inventing those numbers to seed a parametric master). Stage 0 intake records the concept-level design intent only; Gate A (Alpha shop compile) cannot run without a CAD master and is not started."
+}

@@ -1,0 +1,6 @@
+item,required_spec,search_terms,supplier_candidates,date_checked,unit_price_usd,lead_time,substitution_risk,notes
+Tine stock,"spring-temper metal strip for cantilever tines; exact alloy/gauge pending mule testing","spring steel kalimba tine stock; blue tempered spring steel strip",TBD,TBD,TBD,TBD,Medium,"No tine length/width/thickness values exist yet; sourcing blocked on tine-mule results (see design.md Tine Mechanics)."
+Bridge/pressure-bar stock,"clamp bar or saddle stock for tine seating","kalimba bridge bar; mbira pressure bar stock",TBD,TBD,TBD,TBD,Medium,"Clamp force and seating geometry pending mule review."
+Resonator material,"shared or modular resonator body stock (topology not yet selected)","kalimba resonator box wood; modular resonator shell stock",TBD,TBD,TBD,TBD,Medium,"No cavity/volume/port targets exist; resonator topology is an open design question."
+Damping material,"felt/foam/gasket family for buzz control","instrument felt damping strip; foam gasket buzz damper",TBD,TBD,TBD,TBD,Low,"Placement and material family pending buzz observations from mule."
+Layout mockup stock,"non-sounding panel material for ergonomic layout mockup","MDF layout mockup panel; cardboard ergonomic mockup stock",TBD,TBD,TBD,TBD,Low,"Concept-only test surface; no fabrication authority."
