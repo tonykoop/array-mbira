@@ -1,0 +1,6 @@
+check_id,area,target,method,tolerance,measured,result,action
+VAL-001,Layout mockup,"ergonomic review of interval directions, duplicated notes, hand mode, accidental-contact risk","non-sounding mockup handling session",TBD,TBD,TBD,"Revise grid spacing/interval mapping"
+VAL-002,Tine mule,"measured removable-tine response: stock provenance, clamp state, sustain, buzz, pitch stability",TBD,TBD,TBD,TBD,"Change tine stock/geometry/clamp method"
+VAL-003,Bridge/pressure-bar,"repeatable clamp force and serviceable tine replacement",TBD,TBD,TBD,TBD,"Revise clamp/bridge design"
+VAL-004,Resonator comparison,"loudness balance, dead notes, sympathetic coupling across candidate resonator topologies",TBD,TBD,TBD,TBD,"Select resonator topology"
+VAL-005,Body interface,"bridge load, resonator clearance, hand position, service access requirements",TBD,TBD,TBD,TBD,"Revise body/frame design"
